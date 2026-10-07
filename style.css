@@ -1,0 +1,185 @@
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+hr,
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s ease-in-out;
+}
+
+ins {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  text-align: center;
+  padding-top: 48px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 96px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+
+button {
+  /* width: 315.35px; */
+  width: 370px;
+  height: 355px;
+  border: 2px solid #000000;
+
+  img {
+    height: 100%;
+  }
+}
+
+button:hover {
+  border: 10px solid #ffb800;
+}
+
+body.winner {
+  min-height: 100vh;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 75px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  position: relative;
+  /* background-color: cadetblue; */
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  font-weight: 700;
+}
+
+.user-pick {
+  min-height: 80vh;
+  max-width: 500px;
+  width: 100%;
+
+  img {
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+}
+.user-win {
+  height: 10vh;
+}
+.user {
+}
+.comp-pick {
+  min-height: 80vh;
+  max-width: 500px;
+  width: 100%;
+
+
+  img {
+    width: 100%;
+    transform: scaleX(-1);
+    mix-blend-mode: multiply;
+
+  }
+}
+.comp-win {
+  height: 10vh;
+
+}
+.computer {
+}
+body.winner button {
+  height: 10vh;
+  font:inherit;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto ;
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (width<769px) {
+  body {
+    /* background-color: green; */
+    padding-top: 24px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
+  ul {
+    row-gap: 25px;
+  }
+  li button {
+    height: 250px;
+  }
+
+  body.winner {
+    .wrapper {
+      row-gap: 48px;
+    }
+  }
+}
